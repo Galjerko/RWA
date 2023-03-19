@@ -1,0 +1,14 @@
+
+    <nav>
+        <a routerLink="/" routerLinkActive="active">Početna</a>
+        <a *ngIf="uloga ==0" routerLink="/prijava" routerLinkActive="active" >Prijava</a>
+        <a  *ngIf="uloga ==0"routerLink="/registracija" routerLinkActive="active" >Registracija</a>
+        <a  routerLink="/dokumentacija" routerLinkActive="active" >Dokumentacija</a>
+        <a  *ngIf=" uloga == 1 ||uloga == 2" routerLink="/profil" routerLinkActive="active">Profil</a>
+        <a  *ngIf="uloga == 1 || uloga == 2" (click)="odjava()">Odjava</a>
+        <a  *ngIf=" uloga == 2" >Admin</a>
+       
+
+      </nav>
+      <router-outlet></router-outlet>
+

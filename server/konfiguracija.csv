@@ -1,0 +1,6 @@
+rest.port=4202
+app.port=4201
+
+app.broj.stranica=10
+tmdb.apikey.v3=
+tmdb.apikey.v4=

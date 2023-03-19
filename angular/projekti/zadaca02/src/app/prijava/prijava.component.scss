@@ -1,0 +1,45 @@
+.forma {
+	width: 320px;
+	background: #4f73d8;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+h1 {
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+input {
+	width: 100%;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding: 6px 15px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+input[type="button"] {
+	background: #bac675;
+	border: 0;
+	cursor: pointer;
+	color: #3e3d3d;
+	&:hover {
+		background: #600ae0;
+		transition: 0.6s;
+	}
+}

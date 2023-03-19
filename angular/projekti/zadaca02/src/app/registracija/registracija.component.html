@@ -1,0 +1,59 @@
+<main>
+  <div id="poruka"></div>
+  <div class="forma">
+    <form id="forma"
+    >
+      <label for="ime">Ime</label>
+      <input
+        type="text"
+        name="ime"
+        id="ime"
+        required
+  
+        title="2-20 slova"
+      />
+      <br />
+      <label for="prezime">Prezime</label>
+      <input
+        type="text"
+        name="prezime"
+        id="prezime"
+        required
+   
+        title="2-30 slova"
+      />
+      <br />
+      <label for="lozinka">Lozinka</label>
+      <input
+        type="password"
+        name="lozinka"
+        id="lozinka"
+        required
+
+        title="3-20 znakova"
+      />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+     
+        title="ispravan mail"
+      />
+      <br />
+      <label for="korime">Korisničko ime</label>
+      <input
+        type="text"
+        name="korime"
+        id="korime"
+        required
+   
+        title="3-20 znakova"
+      />
+      <br />
+      <button type="submit" (click)="registrirajSe()">Registriraj se</button>
+    </form>
+  </div>
+</main>

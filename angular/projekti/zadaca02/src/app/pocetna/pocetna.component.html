@@ -1,0 +1,14 @@
+<main>
+  <div class="filmoviPocetna">
+    <ol>
+      <p *ngFor="let item of genre; index as i"> 
+        <li> {{item.naziv}}
+          <ul>
+            <li *ngIf="movie[i*2]">{{movie[i*2].title}}</li>
+            <li *ngIf="movie[i*2+1]">{{movie[i*2+1].title}}</li>
+          </ul>
+        </li>
+      </p>
+    </ol>
+  </div>
+  </main>

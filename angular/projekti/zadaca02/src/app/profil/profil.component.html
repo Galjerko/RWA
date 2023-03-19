@@ -1,0 +1,57 @@
+<main>
+    <div id="poruka"></div>
+    <div class="forma">
+      <form id="forma" >
+
+      
+        <label for="ime">Ime</label>
+        <input
+        [(ngModel)]="ime"
+          type="text"
+          name="ime"
+          id="ime"
+          required
+          pattern="[a-zA-Z]{2,20}"
+          title="2-20 slova"
+        />
+        <br />
+        <label for="prezime">Prezime</label>
+        <input
+        [(ngModel)]="prezime"
+          type="text"
+          name="prezime"
+          id="prezime"
+          required
+          pattern="[a-zA-Z]{2,30}"
+          title="2-30 slova"
+        />
+   
+        <label for="email">Email</label>
+        <input
+        readonly
+        [(ngModel)]="email"
+          type="email"
+          name="email"
+          id="email"
+          required
+          pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}"
+          title="ispravan mail"
+        />
+        <br />
+        <label for="korime">Korisničko ime</label>
+        <input
+        readonly
+        [(ngModel)]="korisnicko_ime"
+          type="text"
+          name="korime"
+          id="korime"
+          required
+          pattern=".{3,20}"
+          title="3-20 znakova"
+        />
+        <br />
+        <button type="submit" (click)="azuriraj()"  >Ažuriraj podatke</button>
+      </form>
+    </div>
+  </main>
+  
